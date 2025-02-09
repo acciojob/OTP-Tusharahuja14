@@ -17,7 +17,10 @@ codes.forEach((code,index)=>{
 	code.addEventListener("keydown",(e)=>{
 		if(e.key==="Backspace"&&e.target.value==="")
 		{
+			if(index>0)
+			{
 			codes[index-1].focus();
+			}
 		}
 	});
 });
