@@ -1,1 +1,56 @@
-/*  your css code here. If applicable */
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Center content */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Heading and Subheading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#verification_subtext {
+    font-size: 16px;
+    color: #555;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* OTP Input Fields */
+.code-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.code {
+    width: 50px;
+    height: 60px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+	color:black;
+}
+
+/* Focus effect on input fields */
+.code:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
