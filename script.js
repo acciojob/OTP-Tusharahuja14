@@ -11,7 +11,10 @@ codes.forEach((code,index)=>{
 		}
 		if(e.target.value!==""&& index<codes.length-1)
 		{
+			if(index<codes.length-1)
+			{
 			codes[index+1].focus();
+			}
 		}
 	});
 	code.addEventListener("keydown",(e)=>{
